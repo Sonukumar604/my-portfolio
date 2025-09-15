@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solo Leveling System</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="status-panel">
+            <div class="character-info">
+                <h2>Character Status</h2>
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-label">Level:</span>
+                        <span class="stat-value" id="level">1</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">EXP:</span>
+                        <span class="stat-value" id="exp">0/100</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Strength:</span>
+                        <span class="stat-value" id="strength">10</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Agility:</span>
+                        <span class="stat-value" id="agility">10</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tasks-panel">
+            <h2>Daily Tasks</h2>
+            <div class="tasks-list" id="tasksList">
+                <!-- Tasks will be added here dynamically -->
+            </div>
+        </div>
+        
+        <div class="level-up-notification" id="levelUpNotification">
+            <div class="notification-content">
+                <h1>LEVEL UP!</h1>
+                <div class="stats-increase">
+                    <p>Strength +5</p>
+                    <p>Agility +5</p>
+                </div>
+            </div>
+        </div>
+
+        <button id="gainExpBtn" class="action-button" disabled>Complete Tasks to Gain Experience</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
